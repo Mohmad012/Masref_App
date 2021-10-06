@@ -20,7 +20,7 @@ const data = [
 			checkLinkNav:false,
 			Viewdemo:'View demo',
 			nameLinkNav:'',
-			path:"/index-demo-1"
+			path:"Masref_App/index-demo-1"
 		}, 
 		{
 			img:HomeDemo2,
@@ -30,7 +30,7 @@ const data = [
 			checkLinkNav:false,
 			Viewdemo:'View demo',
 			nameLinkNav:'',
-			path:"/index-demo-2"
+			path:"Masref_App/index-demo-2"
 		}, 
 		{
 			img:HomeDemo3,
@@ -40,7 +40,7 @@ const data = [
 			checkLinkNav:false,
 			Viewdemo:'View demo',
 			nameLinkNav:'',
-			path:"/index-demo-3"
+			path:"Masref_App/index-demo-3"
 		},
 		{
 			img:HomeDemo4,
@@ -50,7 +50,7 @@ const data = [
 			checkLinkNav:false,
 			Viewdemo:'View demo',
 			nameLinkNav:'',
-			path:"/index-demo-4"
+			path:"Masref_App/index-demo-4"
 		}, 
 		{
 			img:HomeDemo5,
@@ -60,7 +60,7 @@ const data = [
 			checkLinkNav:true,
 			nameLinkNav:'about us',
 			Viewdemo:'',
-			path:"/about-us"
+			path:"Masref_App/about-us"
 		}, 
 		{
 			img:HomeDemo6,
@@ -70,7 +70,7 @@ const data = [
 			checkLinkNav:true,
 			nameLinkNav:'our services',
 			Viewdemo:'',
-			path:"/services"
+			path:"Masref_App/services"
 		},
 		{
 			img:HomeDemo7,
@@ -80,7 +80,7 @@ const data = [
 			checkLinkNav:true,
 			nameLinkNav:'faq page',
 			Viewdemo:'',
-			path:"/faq"
+			path:"Masref_App/faq"
 		}, 
 		{
 			img:HomeDemo8,
@@ -90,7 +90,7 @@ const data = [
 			checkLinkNav:true,
 			nameLinkNav:'Pricing Plans',
 			Viewdemo:'',
-			path:"/pricing"
+			path:"Masref_App/pricing"
 		}, 
 		{
 			img:HomeDemo9,
@@ -100,7 +100,7 @@ const data = [
 			checkLinkNav:true,
 			nameLinkNav:'contact us',
 			Viewdemo:'',
-			path:"/contact-us"
+			path:"Masref_App/contact-us"
 		},		
 ]
 
