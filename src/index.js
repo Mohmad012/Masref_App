@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // basename="template_react"
 ReactDOM.render(
-	<BrowserRouter>
+	<BrowserRouter basename="Masref_App">
 		<App />
 	</BrowserRouter>,
   document.getElementById('root')
