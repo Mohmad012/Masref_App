@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Masref_App/static/css/main.7a0cb3d9.chunk.css",
-    "main.js": "/Masref_App/static/js/main.bbc7cbb0.chunk.js",
-    "main.js.map": "/Masref_App/static/js/main.bbc7cbb0.chunk.js.map",
+    "main.js": "/Masref_App/static/js/main.5ba2e13f.chunk.js",
+    "main.js.map": "/Masref_App/static/js/main.5ba2e13f.chunk.js.map",
     "runtime-main.js": "/Masref_App/static/js/runtime-main.4746d397.js",
     "runtime-main.js.map": "/Masref_App/static/js/runtime-main.4746d397.js.map",
     "static/css/2.a02be836.chunk.css": "/Masref_App/static/css/2.a02be836.chunk.css",
@@ -50,6 +50,6 @@
     "static/css/2.a02be836.chunk.css",
     "static/js/2.247510f0.chunk.js",
     "static/css/main.7a0cb3d9.chunk.css",
-    "static/js/main.bbc7cbb0.chunk.js"
+    "static/js/main.5ba2e13f.chunk.js"
   ]
 }
