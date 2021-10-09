@@ -12,9 +12,9 @@ import FooterWith from '../../layouts/Footer/FooterWith'
 
 import SectionHeading from '../../components/SectionHeading'
 import Breadcumb from '../../components/Breadcumb'
+import AboutUs from '../../components/AboutUs'
 
 import SecTable from './SecTable'
-import SecAboutUs from './SecAboutUs'
 
 const PricingContainer = () => {
 
@@ -44,7 +44,7 @@ const PricingContainer = () => {
         </div>
       </section>
       
-      <SecAboutUs
+      <AboutUs
         firstClass="about-us-area section-padding-0-70 clearfix"
         data={ServicesContent}
         img={AboutCoreImgAppo}

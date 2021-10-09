@@ -1,9 +1,9 @@
 import Typed from "react-typed"
 
-const SecHeroSection = ({AbsoImgInfo}) => {
+const SecHeroSection = ({ClassSec="" , img="" , AbsoImgInfo="" , AddWrapper=false}) => {
 
   return (
-    <section className="hero-section ico-bg3 relative hidden" id="home">
+    <section className={ClassSec} id="home">
       <div className="hero-section-content">
         <div className="container ">
           <div className="row align-items-center">
@@ -34,15 +34,23 @@ const SecHeroSection = ({AbsoImgInfo}) => {
                 </div>
               </div>
             </div>
-            <div className="mt-50 col-12 col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-sm-12 ">
-              <div className="wow fadeInUp" data-wow-delay="0.5s">
-                <div className="ab-wrapper v2">
-                	{AbsoImgInfo && AbsoImgInfo.map((item , key) => (
-                		<img key={key} className={item.className} data-aos-delay={item.dataDelay && "200"} src={item.img} alt="" />		
-                	))}
-                </div> 
+            {AddWrapper ? (
+              <div className="mt-50 col-12 col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-sm-12 ">
+                <div className="wow fadeInUp" data-wow-delay="0.5s">
+                  <div className="ab-wrapper v2">
+                    {AbsoImgInfo && AbsoImgInfo.map((item , key) => (
+                      <img key={key} className={item.className} data-aos-delay={item.dataDelay && "200"} src={item.img} alt="" />   
+                    ))}
+                  </div> 
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="mt-50 col-12 col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-sm-12 ">
+                <div className="wow fadeInUp" data-wow-delay="0.5s">
+                  <img src={img} alt="" className="sity img-responsive center-block" />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-const SecAboutUs = ({firstClass , data , img}) => {
+const AboutUs = ({firstClass , data , img}) => {
   return(
       <section className={firstClass}>
         <div className="container">
@@ -29,4 +29,4 @@ const SecAboutUs = ({firstClass , data , img}) => {
   )
 }
 
-export default SecAboutUs
+export default AboutUs

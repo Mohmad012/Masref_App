@@ -117,7 +117,7 @@ export const ServicesBlockInfo = [
     },
 ]
 
-export const OurService = [
+export const OurServiceContent = [
     {
         title:'Secure Payment Service',
         img:HomeDemo3IconsS1

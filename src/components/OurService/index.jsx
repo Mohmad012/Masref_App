@@ -1,6 +1,6 @@
-import SectionHeading from '../../../components/SectionHeading'
+import SectionHeading from '../SectionHeading'
 
-const SecOurService = ({data}) => {
+const OurService = ({data}) => {
   return (
     <section className=" section-padding-100-70 d-sec">
       <div className="container">
@@ -23,4 +23,4 @@ const SecOurService = ({data}) => {
   );
 }
 
-export default SecOurService
+export default OurService

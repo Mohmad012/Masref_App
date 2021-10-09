@@ -3,7 +3,7 @@ import {
           FeaturesContent,
           PlatformContent,
           ServicesBlockInfo,
-          OurService
+          OurServiceContent
        } from '../../data/data-containers/data-HomeDemo3.js';
 
 import {
@@ -17,12 +17,13 @@ import './style/HomeDemo3.scss'
 import Header from "../../layouts/Header"
 import FooterPages from '../../layouts/Footer/FooterPages'
 
+import OurFeatures from '../../components/OurFeatures'
+import OurService from '../../components/OurService'
+import PaymentPlatform from '../../components/PaymentPlatform'
+
 import SecHeroSection from './SecHeroSection'
 import SecOurMain from './SecOurMain'
-import SecOurFeatures from './SecOurFeatures'
-import SecPaymentPlatform from './SecPaymentPlatform'
 import SecHowITWorks from './SecHowITWorks'
-import SecOurService from './SecOurService'
 
 const HomeDemo3 = () => {
 
@@ -33,10 +34,21 @@ const HomeDemo3 = () => {
         <div className="clearfix" />
         <SecOurMain data={OurMainContent} />
         <div className="clearfix" />
-        <SecPaymentPlatform data={PlatformContent} img1={HomeDemo3About11} img2={HomeDemo3About12} img3={HomeDemo3Dotted1} />
-        <SecOurFeatures data={FeaturesContent} />
+        <PaymentPlatform
+          data={PlatformContent}
+          img1={HomeDemo3About11}
+          img2={HomeDemo3About12}
+          img3={HomeDemo3Dotted1}
+        />
+        <OurFeatures
+          data={FeaturesContent}
+          ClassSec="section-padding-100-70 relative sky-bg"
+          IdSec="feet"
+          ClassBox="service_single_content text-center mb-100 fadeInUp"
+          ClassHead="bold"
+        />
         <SecHowITWorks ServicesBlockInfo={ServicesBlockInfo} />
-        <SecOurService data={OurService} />
+        <OurService data={OurServiceContent} />
         <FooterPages />
       </div>
     );

@@ -102,3 +102,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 .navbar-cyan .navbar-brand,
 .navbar-cyan .navbar-nav .nav-item .nav-link{color: #04d0ff}
 
+.white-popup {
+    position: fixed !important;
+    background: transparent !important;
+}

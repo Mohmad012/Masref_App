@@ -6,7 +6,6 @@ const SecHeroSection = () => {
         <div className="hero-section-content">
           <div className="container h-100">
             <div className="row h-100 mb-50 align-items-center">
-              {/* Welcome Content */}
               <div className="col-12 col-lg-6 col-md-12">
                 <div className="welcome-content">
                   <div className="promo-section">

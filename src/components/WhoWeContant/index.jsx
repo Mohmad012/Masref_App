@@ -1,19 +1,9 @@
-import SectionHeading from '../../../components/SectionHeading'
+import SectionHeading from '../SectionHeading'
+import Article from "./Article"
 
-const Article = ({text}) => {
-  return(
-      <div className="col-lg-12 col-sm-6 col-xs-12">
-        <div className="article hover box-shadow">
-          <h3 className="article__title">{text}</h3> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>               
-        </div>
-      </div>
-  )
-}
-
-const WhoWeContant = ({img , WhoWeHafe1 , WhoWeHafe2}) => {
+const WhoWeContant = ({img , WhoWeHafe1 , WhoWeHafe2 , ClassSec}) => {
   return (
-    <section className="what-we-do section-padding-100-70">
+    <section className={ClassSec}>
       <div className="container">
         <SectionHeading title='OUR EXPECTED GROWTH' text='Our Global Growth' />
         <div className="clearfix" />

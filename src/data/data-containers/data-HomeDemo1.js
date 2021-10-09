@@ -111,7 +111,7 @@ export const WhoWeHafe2 = [
     },
 ]
 
-export const OurService = [
+export const OurServiceContent = [
     {
         title:'Secure Payment Service',
         img:HomeDemo1IconsS1

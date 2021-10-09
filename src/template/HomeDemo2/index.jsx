@@ -5,7 +5,7 @@ import {
           PlatformContent,
           WhoWeHafe1,
           WhoWeHafe2,
-          OurService,
+          OurServiceContent,
        } from '../../data/data-containers/data-HomeDemo2.js';
 
 import {
@@ -20,12 +20,13 @@ import './style/HomeDemo2.scss'
 import Header from "../../layouts/Header"
 import FooterPages from '../../layouts/Footer/FooterPages'
 
+import OurFeatures from '../../components/OurFeatures'
+import WhoWeContant from '../../components/WhoWeContant'
+import OurService from '../../components/OurService'
+import PaymentPlatform from '../../components/PaymentPlatform'
+
 import SecHeroSection from './SecHeroSection'
 import SecOurMain from './SecOurMain'
-import SecOurFeatures from './SecOurFeatures'
-import SecPaymentPlatform from './SecPaymentPlatform'
-import WhoWeContant from './WhoWeContant'
-import SecOurService from './SecOurService'
 
 let HomeDemo2 = () => {
 
@@ -34,15 +35,30 @@ let HomeDemo2 = () => {
         <Header Title="Home Template2" />
         <SecHeroSection />
         <div className="clearfix" />
-        {/*<SecOurMain data={service_single_content} />*/}
         <SecOurMain
           ServiceLeftBox={ServiceLeftBox}
           ServiceRightBox={ServiceRightBox}
         />
-        <SecPaymentPlatform data={PlatformContent} img1={HomeDemo2About11} img2={HomeDemo2About12} img3={HomeDemo2Dotted1} />
-        <SecOurFeatures data={FeaturesContent} />
-        <WhoWeContant img={HomeDemo2coreImgMap} WhoWeHafe1={WhoWeHafe1} WhoWeHafe2={WhoWeHafe2} />
-        <SecOurService data={OurService} />
+        <PaymentPlatform
+          data={PlatformContent}
+          img1={HomeDemo2About11}
+          img2={HomeDemo2About12}
+          img3={HomeDemo2Dotted1}
+        />
+        <OurFeatures
+          data={FeaturesContent}
+          ClassSec="section-padding-100-70 relative"
+          IdSec="feet"
+          ClassBox="service_single_content text-center mb-100 fadeInUp"
+          ClassHead="bold"
+        />
+        <WhoWeContant
+          img={HomeDemo2coreImgMap}
+          WhoWeHafe1={WhoWeHafe1}
+          WhoWeHafe2={WhoWeHafe2}
+          ClassSec="what-we-do section-padding-0-70"
+        />
+        <OurService data={OurServiceContent} />
         <FooterPages />
       </div>
     );

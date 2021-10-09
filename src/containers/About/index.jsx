@@ -12,16 +12,13 @@ import {
   AboutCoreImgAppo
 } from '../../utils/allImgs'
 
-import Breadcumb from '../../components/Breadcumb'
-
-import SecOurFeatures from "./SecOurFeatures"
-import SecPaymentPlatform from "./SecPaymentPlatform"
-import SecAboutUs from "./SecAboutUs"
-
-
 import Header from '../../layouts/Header'
 import FooterWith from '../../layouts/Footer/FooterWith'
 
+import Breadcumb from '../../components/Breadcumb'
+import OurFeatures from '../../components/OurFeatures'
+import PaymentPlatform from '../../components/PaymentPlatform'
+import AboutUs from '../../components/AboutUs'
 
 const AboutContainer = () => {
 
@@ -29,9 +26,18 @@ const AboutContainer = () => {
     <div>
       <Header Title="About" />
       <Breadcumb title='About us' text='Home' />
-      <SecOurFeatures data={FeaturesContent} />
-      <SecPaymentPlatform data={PlatformContent} img1={AboutAbout11} img2={AboutAbout12} img3={AboutDotted1} />
-      <SecAboutUs
+      <OurFeatures
+        data={FeaturesContent}
+        ClassSec="section-padding-100-70 relative"
+        ClassBox="service_single_content text-left mb-100 fadeInUp"
+      />
+      <PaymentPlatform
+        data={PlatformContent}
+        img1={AboutAbout11}
+        img2={AboutAbout12}
+        img3={AboutDotted1}
+      />
+      <AboutUs
         firstClass="about-us-area section-padding-100-70 clearfix"
         data={ServicesContent}
         img={AboutCoreImgAppo}

@@ -1,6 +1,6 @@
-const SecPaymentPlatform = ({data , img1 , img2 , img3}) => {
+const PaymentPlatform = ({data , img1 , img2 , img3}) => {
   return(
-      <section className="relative section-padding-100-70">
+      <section className="relative section-padding-100-70 payment-section-gradient">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
@@ -36,4 +36,4 @@ const SecPaymentPlatform = ({data , img1 , img2 , img3}) => {
   )
 }
 
-export default SecPaymentPlatform
+export default PaymentPlatform

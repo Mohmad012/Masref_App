@@ -5,7 +5,7 @@ import {
           PlatformContent,
           WhoWeHafe1,
           WhoWeHafe2,
-          OurService,
+          OurServiceContent,
        } from '../../data/data-containers/data-HomeDemo1.js';
 
 import {
@@ -20,25 +20,46 @@ import './style/HomeDemo1.scss'
 import Header from "../../layouts/Header"
 import FooterPages from '../../layouts/Footer/FooterPages'
 
-import SecHeroSection from './SecHeroSection'
+import SecHeroSection from '../../components/HeroSection1_4'
+import OurFeatures from '../../components/OurFeatures'
+import WhoWeContant from '../../components/WhoWeContant'
+import OurService from '../../components/OurService'
+import PaymentPlatform from '../../components/PaymentPlatform'
+
 import SecAbout from './SecAbout'
-import SecOurFeatures from './SecOurFeatures'
-import SecPaymentPlatform from './SecPaymentPlatform'
-import WhoWeContant from './WhoWeContant'
-import SecOurService from './SecOurService'
 
 const HomeDemo1 = () => {
 
     return (
       <div>
         <Header Title="Home Template1" />
-        <SecHeroSection AbsoImgInfo={AbsoImgInfo} />
+        <SecHeroSection
+          ClassSec="hero-section ico-bg3 relative hidden"
+          AbsoImgInfo={AbsoImgInfo}
+          AddWrapper={true}
+        />
         <div className="clearfix" />
         <SecAbout data={service_single_content} />
-        <SecOurFeatures data={FeaturesContent} />
-        <SecPaymentPlatform data={PlatformContent} img1={HomeDemo1About11} img2={HomeDemo1About12} img3={HomeDemo1Dotted1} />
-        <WhoWeContant img={HomeDemo1coreImgMap} WhoWeHafe1={WhoWeHafe1} WhoWeHafe2={WhoWeHafe2} />
-        <SecOurService data={OurService} />
+        <OurFeatures
+          data={FeaturesContent}
+          ClassSec="section-padding-0-70 relative"
+          IdSec="feet"
+          ClassBox="service_single_content text-center mb-100 fadeInUp"
+          ClassHead="bold"
+        />
+        <PaymentPlatform
+          data={PlatformContent}
+          img1={HomeDemo1About11}
+          img2={HomeDemo1About12}
+          img3={HomeDemo1Dotted1}
+        />
+        <WhoWeContant 
+          img={HomeDemo1coreImgMap} 
+          WhoWeHafe1={WhoWeHafe1} 
+          WhoWeHafe2={WhoWeHafe2}
+          ClassSec="what-we-do section-padding-100-70"
+        />
+        <OurService data={OurServiceContent} />
         <FooterPages />
       </div>
     );

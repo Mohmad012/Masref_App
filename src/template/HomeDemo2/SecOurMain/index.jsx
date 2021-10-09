@@ -16,10 +16,8 @@ const SecOurMain = ({ServiceLeftBox , ServiceRightBox}) => {
           </div>
           <div className="clearfix" />
           <div className="outer">
-            {/*Logo*/}
             <div className="inner-circle"><a href="#"><img className="phone" src={HomeDemo2AppDesign} alt="image" /></a></div>
             <div className="row clearfix">
-              {/*Left Column*/}
               <div className="left-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 {ServiceLeftBox && ServiceLeftBox.map((item , key) => (
                   <ServiceBox
@@ -30,7 +28,6 @@ const SecOurMain = ({ServiceLeftBox , ServiceRightBox}) => {
                   />
                 ))}
               </div>
-              {/*Right Column*/}
               <div className="right-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 {ServiceRightBox && ServiceRightBox.map((item , key) => (
                   <ServiceBox
